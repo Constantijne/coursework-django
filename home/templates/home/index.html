@@ -1,0 +1,22 @@
+{% extends 'home/layout.html' %}
+
+{% block homeTitle %}
+    Home
+{% endblock %}
+
+{% block homeNavigation %}
+    <a href="{% url 'home'%}"><li><i class="fa-solid fa-house-chimney-medical"></i> Главная</li></a>
+    <a href="{% url 'home'%}"><li><i class="fa-solid fa-hospital-user"></i>  Отделения</li></a>
+    <a href="{% url 'home'%}"><li><i class="fa-solid fa-user-doctor"></i> Врачи</li></a>
+    <a href="{% url 'home'%}"><li><i class="fa-solid fa-bed-pulse"></i> Палаты</li></a>
+    <a href="{% url 'home'%}"><li><i class="fa-solid fa-notes-medical"></i> Диагнозы</li></a>
+    <a href="{% url 'about' %}"><li><i class="fa-solid fa-star-of-life"></i> О проекте</li></a>
+{% endblock %}
+
+{% block homeContent %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores dolorum earum est facilis, incidunt ipsa nemo nulla pariatur reiciendis sint, tempore, ullam vero! Ad beatae doloremque molestiae odio quos?</p>
+    <button class="btn btn-danger">На страницу проэкта</button>
+    </div >
+{% endblock %}
