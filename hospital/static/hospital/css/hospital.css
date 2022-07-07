@@ -72,3 +72,34 @@ main .features p {
     margin: 20px auto;
 }
 
+.alert-primary {
+    float: left;
+    clear: both;
+    width: 500px;
+    margin: 20px 33%;
+    text-align: center;
+}
+
+.alert-success {
+    float: left;
+    clear: both;
+    width: 900px;
+    margin: 20px 20%;
+    text-align: center;
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 600px;
+    margin: 20px 29%;
+    text-align: center;
+}
+
+.alert-danger {
+    float: left;
+    clear: both;
+    width: 500px;
+    margin: 20px 33%;
+    text-align: center;
+}

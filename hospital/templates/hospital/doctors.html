@@ -1,0 +1,26 @@
+{% extends 'hospital/layout.html' %}
+
+{% block hospitalTitle %}
+    Doctors
+{% endblock %}
+
+{% block hospitalNavigation %}
+    <a href="{% url 'home'%}"><li><i class="fa-solid fa-house-chimney-medical"></i> Главная</li></a>
+    <a href="{% url 'dep'%}"><li><i class="fa-solid fa-hospital-user"></i>  Отделения</li></a>
+    <a href="{% url 'doc'%}"><li><i class="fa-solid fa-user-doctor"></i> Врачи</li></a>
+    <a href="{% url 'rooms'%}"><li><i class="fa-solid fa-bed-pulse"></i> Палаты</li></a>
+    <a href="{% url 'diag'%}"><li><i class="fa-solid fa-notes-medical"></i> Диагнозы</li></a>
+    <a href="{% url 'about' %}"><li><i class="fa-solid fa-star-of-life"></i> О проекте</li></a>
+{% endblock %}
+
+{% block hospitalContent %}
+    <div class="features">
+        <h1>Врачи нашей больницы</h1>
+            {% for el in docs %}
+                <div class="alert alert-primary">
+                    <h3><i class="fa-solid fa-user-nurse"></i> {{ el.second_name_doctor }} {{ el.first_name_doctor }} {{ el.last_name_doctor }}</h3>
+                        <p>{{ el.about_doctor }}</p>
+                </div>
+            {% endfor %}
+    </div >
+{% endblock %}

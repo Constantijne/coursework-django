@@ -6,18 +6,20 @@
 
 {% block aboutNavigation %}
     <a href="{% url 'home'%}"><li><i class="fa-solid fa-house-chimney-medical"></i> Главная</li></a>
-    <a href="{% url 'home'%}"><li><i class="fa-solid fa-hospital-user"></i>  Отделения</li></a>
-    <a href="{% url 'home'%}"><li><i class="fa-solid fa-user-doctor"></i> Врачи</li></a>
-    <a href="{% url 'home'%}"><li><i class="fa-solid fa-bed-pulse"></i> Палаты</li></a>
-    <a href="{% url 'home'%}"><li><i class="fa-solid fa-notes-medical"></i> Диагнозы</li></a>
+    <a href="{% url 'dep'%}"><li><i class="fa-solid fa-hospital-user"></i>  Отделения</li></a>
+    <a href="{% url 'doc'%}"><li><i class="fa-solid fa-user-doctor"></i> Врачи</li></a>
+    <a href="{% url 'rooms'%}"><li><i class="fa-solid fa-bed-pulse"></i> Палаты</li></a>
+    <a href="{% url 'diag'%}"><li><i class="fa-solid fa-notes-medical"></i> Диагнозы</li></a>
     <a href="{% url 'about' %}"><li><i class="fa-solid fa-star-of-life"></i> О проекте</li></a>
 {% endblock %}
 
 {% block aboutContent %}
     <div class="features">
         <h1>{{ title }}</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores dolorum earum est facilis, incidunt ipsa nemo nulla pariatur reiciendis sint, tempore, ullam vero! Ad beatae doloremque molestiae odio quos?</p>
-    <button class="btn btn-warning">На главную страницу</button>
+    <p>
+        Данная программа предназначена для работы базой данных SQLite3 для городской больницы. Реализована при помощи языка Python и фреймворка Django. В данной программе можно получить данные про всех пациентов, их диагнозы даты обследований, докторский состав больницы. Также проверить наличие свободных мест в палатах Система управления может быть использована в рельных условиях, но при ряде внесенных в нее изменений. Проект является курсовой работой студента третего курса группы 6.1219-2 специальности инженерия программного обеспечения Кабанова Константина.
+                            Куратор курсовой работы - Лісняк Андрій Олександрович
+    </p>
     </div >
 
 {% endblock %}
